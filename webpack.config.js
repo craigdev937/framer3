@@ -8,7 +8,7 @@ module.exports = {
         chunkFilename: "[id].js"
     },
     resolve: {
-        alias: {"@public": path.resolve(__dirname, "dist/public")},
+        alias: {"@public": path.resolve(__dirname, "./public")},
         extensions: [".ts", ".tsx", ".js", ".jsx", ".json"]
     },
     devServer: {
