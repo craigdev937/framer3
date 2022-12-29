@@ -1,11 +1,29 @@
 import React from "react";
 import "./App.css";
+import { motion } from "framer-motion";
 
 export const App = (): JSX.Element => {
+    const [xValue, setXValue] = React.useState(0);
+    const [rotateValue, setRotateValue] = React.useState(0);
+    function handleClick() {
+        setXValue(Math.random() * 500 - 250);
+        setRotateValue(Math.random() * 360);
+    };
     return (
         <React.Fragment>
-            <h1>App</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum, consequatur porro sit aut facilis id rem omnis a iusto tenetur dolores non maiores temporibus cum distinctio ut pariatur possimus?</p>
+            <motion.main 
+                className="square"                
+                animate={{
+                    x: xValue,
+                    rotate: rotateValue,
+                }}
+                transition={{
+                    duration: 2,
+                    type: "spring",
+                    bounce: 0.6
+                }}
+                onClick={handleClick}
+            />
         </React.Fragment>
     );
 };
