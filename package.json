@@ -5,14 +5,16 @@
   "main": "index.tsx",
   "scripts": {
     "dev": "webpack serve --mode development",
-    "pro": "webpack --mode production"
+    "pro": "webpack --mode=production",
+    "predeploy": "npm run pro",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/craigdev937/framer3.git"
   },
   "keywords": ["Webpack", "TypeScript", "React", "Framer-Motion"],
-  "author": "",
+  "author": "Craig Johnson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/craigdev937/framer3/issues"
