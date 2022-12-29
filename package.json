@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/craigdev937/framer3.git"
   },
-  "keywords": [],
+  "keywords": ["Webpack", "TypeScript", "React", "Framer-Motion"],
   "author": "",
   "license": "ISC",
   "bugs": {
