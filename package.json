@@ -5,9 +5,9 @@
   "main": "index.tsx",
   "scripts": {
     "dev": "webpack serve --mode development",
-    "pro": "webpack --mode production",
-    "predeploy": "npm run pro",
-    "deploy": "gh-pages -d"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
