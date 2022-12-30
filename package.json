@@ -5,7 +5,7 @@
   "main": "index.tsx",
   "scripts": {
     "dev": "webpack serve --mode development",
-    "pro": "webpack --mode=production",
+    "pro": "webpack --mode production",
     "predeploy": "npm run pro",
     "deploy": "gh-pages -d dist"
   },
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/craigdev937/framer3/issues"
   },
-  "homepage": "https://github.com/craigdev937/framer3",
+  "homepage": "https://craigdev937.github.io/framer3/",
   "dependencies": {
     "framer-motion": "^8.0.2",
     "react": "^18.2.0",
